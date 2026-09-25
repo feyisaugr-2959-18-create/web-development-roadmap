@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -144,11 +144,75 @@
 
         <input type="reset"><br>
         <input type="submit">
-    </form>
-    <script type="text/javascript">
-        console.log(Math.floor(Math.random() * 6));
+    </form><br>
+    <p><b>My body mass index:</b></p>
+
+    <label for="myweight">Weight:</label>
+    <input id="myweight" type="number">
+    <br>
+
+    <label for="myheight">Height:</label>
+    <input id="myheight" type="number">
+    <br>
+
+    <button id="submit" type="button">Submit</button>
+    <br>
+
+    <label id="myBMI"></label><br>
+    <p><b>program to count people entering the Gate for meeting:</b></p>
+    <label id="count">0</label><br>
+    <button id="increase_btn">increase</button>
+    <button id="decrease_btn">decrease</button>
+    <button id="save_btn">save</button>
+    <button id="reset_btn">reset</button><br>
+    <label id="quantity"><b>the number of peeople:</b></label>
 
 
+
+
+
+
+    <script>
+
+        const myweight = document.getElementById("myweight");
+        const myheight = document.getElementById("myheight");
+        const submit = document.getElementById("submit");
+        const myBMI = document.getElementById("myBMI");
+
+        submit.onclick = function () {
+
+            const weight = Number(myweight.value);
+            const height = Number(myheight.value);
+
+            const result = weight / (height * height);
+
+            myBMI.textContent = `Your BMI is ${result}`;
+
+        };
+        const count = document.getElementById("count");
+        const increase_btn = document.getElementById("increase_btn");
+        const decrease_btn = document.getElementById("decrease_btn");
+        const save_btn = document.getElementById("save_btn");
+        const reset_btn = document.getElementById("reset_btn");
+        const quantity = document.getElementById("quantity");
+
+        let counter = 0;
+        increase_btn.onclick = function () {
+            counter++;
+            count.textContent = counter;
+        }
+        decrease_btn.onclick = function () {
+            counter--;
+            count.textContent = counter;
+        }
+        reset_btn.onclick = function () {
+            counter = 0;
+            count.textContent = counter;
+        }
+        save_btn.onclick = function () {
+
+            quantity.textContent = `the number of people:${counter}`;
+        }
 
 
 
