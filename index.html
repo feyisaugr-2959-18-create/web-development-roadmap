@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+
+</style>
 
 <body>
     <h1 id="l1">MY first attempt of writing a code</h1>
@@ -66,7 +69,7 @@
         <li> prison break</li>
         <li>viking</li>
         <p>here is what you should do to bsucceed in life:</p>
-        <ul>
+        <ul id="myul">
             <li>think creatively</li>
             <li>dress smartly</li>
             <li>eat sensibly</li>
@@ -108,25 +111,27 @@
     </audio><br>
     <!--form attribute-->
     <form action="index.php" method="post" enctype="multipart/form-data" class="myform">
-        <label for="myusername">username</label>
-        <input id="myusername" type="text" placeholder="feyisa@12"><br>
-        <label for="mypassword">password</label>
-        <input id="mypassword" type="password" placeholder="Feye@8377"><br>
-        <label for="myemail">email</label>
-        <input id="myemail" type="email" placeholder="fanug12@gmail.com"><br>
-        <label for="myphone">telephone</label>
-        <input id="myteephone" type="tel" placeholder="+2519-09426890"><br>
-        <label for="myBD">mybirthday:</label>
-        <input id="myBD" type="date" placeholder="12/4/2016"><br>
-        <label for="myage">my age:</label>
-        <input id="myage" type="number" min="0" max="100"><br>
-        <label for="mylevel">my education level:</label>
-        <label for="degree">degree:</label>
-        <input id="degree" type="radio" name="title">
-        <label for="masters">masters:</label>
-        <input id="masters" type="radio" name="title">
-        <label for="PHD">PHD:</label>
-        <input id="PHD" type="radio" name="title"><br>
+        <span class="myinfo"> <label for="myusername">username</label>
+            <input id="myusername" type="text" placeholder="feyisa@12"><br>
+            <label for="mypassword">password</label>
+            <input id="mypassword" type="password" placeholder="Feye@8377"><br>
+            <label for="myemail">email</label>
+            <input id="myemail" type="email" placeholder="fanug12@gmail.com"><br>
+            <label for="myphone">telephone</label>
+            <input id="myteephone" type="tel" placeholder="+2519-09426890"><br>
+            <label for="myBD">mybirthday:</label>
+            <input id="myBD" type="date" placeholder="12/4/2016"><br>
+            <label for="myage">my age:</label>
+            <input id="myage" type="number" min="0" max="100"><br>
+            <label for="mylevel">my education level:</label>
+            <label for="degree">degree:</label>
+            <input id="degree" type="radio" name="title">
+            <label for="masters">masters:</label>
+            <input id="masters" type="radio" name="title">
+            <label for="PHD">PHD:</label>
+            <input id="PHD" type="radio" name="title"><br>
+        </span>
+        <label id="edu_label"></label><br>
         <label>select pyment type:</label>
         <select>
             <option value="telebirr">telebirr</option><br>
@@ -135,15 +140,18 @@
 
 
         </select><br>
+        <label id="pay_label"></label><br>
         <label for="subscribe">subscribe our channel:</label>
         <input id="subscribe" type="checkbox"><br>
+        <label id="subs_label"></label><br>
+
         <label for="comments">add your comments:</label>
         <textarea id="comments" type="text" rows="3" cols="20"></textarea> <br>
         <label for="myfile">Attach your GPA file:</label>
         <input id="myfile" type="file" accept="image/png,image/jpg"><br>
 
         <input type="reset"><br>
-        <input type="submit">
+        <input type="submit" id="mysubmit1">
     </form><br>
     <p><b>My body mass index:</b></p>
 
@@ -155,31 +163,86 @@
     <input id="myheight" type="number">
     <br>
 
+
     <button id="submit" type="button">Submit</button>
     <br>
 
     <label id="myBMI"></label><br>
+    <label id="judge"></label><br>
     <p><b>program to count people entering the Gate for meeting:</b></p>
     <label id="count">0</label><br>
     <button id="increase_btn">increase</button>
     <button id="decrease_btn">decrease</button>
     <button id="save_btn">save</button>
     <button id="reset_btn">reset</button><br>
-    <label id="quantity"><b>the number of peeople:</b></label>
+    <label id="quantity"><b>the number of peeople:</b></label><br>
+    <p><u>
+            number generator:
+        </u>
+    </p><br>
+    <button id="randnum">click</button>
+    <br><br>
+    <label id="randomN1"></label>
+    <label id="randomN2"></label>
+    <label id="randomN3"></label><br>
 
+
+    <h3>click to know my weekly habit:</h3><br>
+    <button id="monday">monday</button>
+    <button id="tuesday">tuesday</button>
+    <button id="wednesday">wednesday</button>
+    <button id="thursday">thursday</button>
+    <button id="friday">friday</button>
+    <button id="weekend">sunday</button><br>
+    <label id="mytask"></label><br>
+    <label for="num1">num1:</label>
+    <input id="num1" type="number"><br>
+    <label for="num2">num1:</label>
+    <input id="num2" type="number"><br>
+    <button id="lcm">LCM</button>
+    <label id="mylcm"></label><br>
+    <button id="gcf">GCF</button>
+    <label id="mygcf"></label><br>
 
 
 
 
 
     <script>
+        const edu_label = document.getElementById(`edu_label`);
+        const degree = document.getElementById(`degree`);
+        const masters = document.getElementById(`masters`);
+        const PHD = document.getElementById(`PHD`);
+        const subscribe = document.getElementById(`subscribe`);
+
+
+
+        const pay_label = document.getElementById(`pay_label`);
+        const subs_label = document.getElementById(`subs_label`);
+        const mysubmit1 = document.getElementById(`mysubmit1`);
+        mysubmit1.onclick = function () {
+            if (degree.checked) {
+                edu_label.textContent = `you have a degree`;
+            }
+            else if (masters.checked) {
+                edu_label.textContent = `you have a masters`;
+            }
+            else {
+                edu_label.textContent = `you have a PHD`;
+            }
+            if (subscribe.checked) {
+                subs_label.textContent = `you are successfully subscribed!`;
+            }
+        }
 
         const myweight = document.getElementById("myweight");
         const myheight = document.getElementById("myheight");
         const submit = document.getElementById("submit");
         const myBMI = document.getElementById("myBMI");
+        const judge = document.getElementById("judge");
 
-        submit.onclick = function () {
+
+        submit.onclick = function () {   //BMI calculator
 
             const weight = Number(myweight.value);
             const height = Number(myheight.value);
@@ -187,9 +250,18 @@
             const result = weight / (height * height);
 
             myBMI.textContent = `Your BMI is ${result}`;
+            if (result > 22) {
+                judge.textContent = `your BMI is too high,you need to lose weight!`;
+            }
+            else if (result < 18) {
+                judge.textContent = `your BMI is too low,you need to gain weight!`;
+            }
+            else {
+                judge.textContent = `your BMI is normal,keep it!`;
 
+            }
         };
-        const count = document.getElementById("count");
+        const count = document.getElementById("count");    //counter program
         const increase_btn = document.getElementById("increase_btn");
         const decrease_btn = document.getElementById("decrease_btn");
         const save_btn = document.getElementById("save_btn");
@@ -214,7 +286,88 @@
             quantity.textContent = `the number of people:${counter}`;
         }
 
+        const randnum = document.getElementById(`randnum`);  //random number generator
+        const randomN1 = document.getElementById(`randomN1`);
+        const randomN2 = document.getElementById(`randomN2`);
+        const randomN3 = document.getElementById(`randomN3`);
 
+        let ranNum1;
+        let ranNum2;
+        let ranNum3;
+
+        let min = 20;
+        let max = 100;
+        randnum.onclick = function () {
+            ranNum1 = Math.floor(Math.random() * (max - min) + min);
+            randomN1.textContent = ranNum1;
+            ranNum2 = Math.floor(Math.random() * (max - min) + min);
+            randomN2.textContent = ranNum2;
+            ranNum3 = Math.floor(Math.random() * (max - min) + min);
+            randomN3.textContent = ranNum3;
+        }
+        const monday = document.getElementById(`monday`);
+        const tuesday = document.getElementById(`tuesday`);
+        const wednesday = document.getElementById(`wednesday`);
+        const thursday = document.getElementById(`thursday`);
+        const friday = document.getElementById(`friday`);
+        const weekend = document.getElementById(`weekend`);
+        const mytask = document.getElementById(`mytask`);
+        monday.onclick = function () {
+            mytask.textContent = `go to gym and library`;
+        }
+        tuesday.onclick = function () {
+            mytask.textContent = `go to class and library`;
+        }
+        wednesday.onclick = function () {
+            mytask.textContent = `go to class and gubae`;
+        }
+        thursday.onclick = function () {
+            mytask.textContent = `go to class and gym`;
+        }
+        friday.onclick = function () {
+            mytask.textContent = `go to class and rest`;
+        }
+        weekend.onclick = function () {
+            mytask.textContent = `go to church and wash my clothes`;
+
+
+
+        }
+        const num1 = document.getElementById(`num1`);
+        const num2 = document.getElementById(`num2`);
+        const lcm = document.getElementById(`lcm`);
+        const gcf = document.getElementById(`gcf`);
+        const mylcm = document.getElementById(`mylcm`);
+        const mygcf = document.getElementById(`mygcf`);
+
+
+
+        gcf.onclick = function () {
+            const mynum1 = Number(num1.value);
+            const mynum2 = Number(num2.value);
+            let calculatedgcf = 1;
+            const min_num = Math.min(mynum1, mynum2);
+
+            for (let i = 1; i <= min_num; i++) {
+                if (mynum1 % i === 0 && mynum2 % i === 0) {
+                    calculatedgcf = i;
+                }
+            } mygcf.textContent = calculatedgcf;
+
+        }
+        lcm.onclick = function () {
+            const mynum1 = Number(num1.value);
+            const mynum2 = Number(num2.value);
+            const max_num = Math.max(mynum1, mynum2);
+            let calculatedlcm = 1;
+            for (let i = max_num; ; i++) {
+                if (i % mynum1 == 0 && i % mynum2 == 0) {
+                    calculatedlcm = i;
+                    break;
+                }
+            } mylcm.textContent = calculatedlcm;
+
+        }
 
 
     </script>
