@@ -1,0 +1,423 @@
+.material-icons {
+    font-size: 25px;
+}
+
+#hhh {
+    color: blueviolet;
+    font-size: 1.4em;
+}
+
+#dida {
+    background-color: #ff002b;
+    font-size: 2em;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+p:hover {
+    background-color: lightblue;
+}
+
+mytable,
+th,
+td {
+    color: black;
+    background-color: tomato;
+    border: 3px solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+caption {
+    font-size: 1.4em;
+}
+
+th {
+    background-color: blueviolet;
+}
+
+td {
+    text-align: center;
+}
+
+ul {
+    background-color: lime;
+    color: blue;
+}
+
+ol {
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightseagreen;
+}
+
+dl {
+    background-color: yellowgreen;
+    color: white;
+}
+
+h3 {
+    color: yellowgreen;
+}
+
+a:link {
+    background-color: rgb(0, 128, 13);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+a:hover {
+    color: palevioletred;
+}
+
+audio {
+    background-color: rgb(0, 255, 200);
+}
+
+image {
+    background-color: cyan;
+}
+
+.myinfo {
+    background-color: rgba(135, 235, 193, 0.591);
+    color: rgb(0, 213, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.myoption {
+    background-color: rgb(0, 145, 255);
+    color: white;
+}
+
+#comments {
+    background-color: chocolate;
+    color: black;
+    font-size: larger;
+}
+
+#myfile {
+    color: #ff002b;
+    background-color: rgb(0, 85, 255);
+}
+
+#formreset {
+    background-color: rgb(182, 205, 50);
+    color: black;
+    border-radius: 25px;
+    font-size: 1.8em;
+    padding: 10px 20px;
+
+
+}
+
+#mysubmit1 {
+    background-color: rgb(0, 179, 255);
+    border-radius: 30px;
+    font-size: 2em;
+    padding: 10px 20px;
+
+
+}
+
+#mysubmit1:hover {
+    color: rgb(155, 42, 165);
+    background-color: gray;
+}
+
+#formreset:hover {
+    color: rgb(155, 42, 165);
+    background-color: chartreuse;
+}
+
+#mycont {
+    text-align: center;
+}
+
+#bmilabel {
+    background-color: rgb(255, 225, 182);
+    color: black;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#myweight {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: green;
+    width: 50%;
+    height: 50px;
+    color: white;
+    border: solid 3px;
+    padding: 40px;
+}
+
+#myheight {
+    text-align: center;
+    background-color: green;
+    width: 50%;
+    height: 50px;
+    color: white;
+    border: solid 3px;
+    font-size: 1.5em;
+}
+
+#submit {
+    background-color: aqua;
+    color: rgb(251, 240, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    font-size: 1.6em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#submit:hover {
+    background-color: black;
+}
+
+#judge {
+    background-color: pink;
+    color: blue;
+}
+
+#myBMI {
+    background-color: pink;
+}
+
+#count {
+    color: rgb(109, 0, 211);
+    font-size: 5em;
+    display: block;
+    text-align: center;
+    font-weight: 1000;
+}
+
+#mybuttons {
+    text-align: center;
+}
+
+
+
+
+#increase_btn {
+    background-color: aquamarine;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+#increase_btn:hover {
+    background-color: rgb(224, 71, 255);
+}
+
+#save_btn {
+    background-color: aquamarine;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+#save_btn:hover {
+    background-color: rgb(224, 71, 255);
+}
+
+#decrease_btn {
+    background-color: crimson;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+#decrease_btn:hover {
+    background-color: rgb(224, 71, 255);
+}
+
+#reset_btn {
+    background-color: crimson;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+#reset_btn:hover {
+    background-color: rgb(224, 71, 255);
+}
+
+#randnum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(100, 230, 237);
+}
+
+#showrandom {
+    color: rgb(111, 139, 0);
+    font-size: 3em;
+    font-family: fantasy;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myhabit {
+    background-color: rgb(115, 255, 0);
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+
+.myhabit:hover {
+    background-color: rgba(255, 255, 255, 0.553);
+}
+
+#mytask {
+    color: black;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.nums {
+    color: rgb(0, 145, 255);
+    font-size: 1.4em;
+    font-style: oblique;
+}
+
+.lcmgcf {
+    background-color: rgb(226, 220, 43);
+    border-radius: 20px;
+    font-style: italic;
+    font-size: 1.6em;
+
+}
+
+.mylcm {
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+dd {
+    border: 4px solid rebeccapurple;
+
+}
+
+#demo {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.6em;
+
+
+}
+
+#plength {
+    width: 20px;
+}
+
+
+
+#mycontainer {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    border: 4px rgb(47, 255, 71) solid;
+    outline: 4px solid gray;
+    outline-offset: 2px;
+    width: 60%;
+    padding: 20px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+
+#tizita {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(95, 137, 160);
+    color: white;
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+#strtbtn {
+    font-size: 2em;
+    padding: 5px 15px;
+    margin: 8px;
+    border-radius: 25px;
+    background-color: rgb(71, 172, 255);
+}
+
+#strtbtn:hover {
+    background-color: rgb(0, 208, 255);
+}
+
+#strtbtn:active {
+    background-color: aquamarine;
+}
+
+#guetext,
+#sylla {
+    font-size: 2em;
+    font-style: italic;
+    color: cadetblue;
+
+}
+
+#clickit {
+    display: flex;
+    text-align: center;
+    background-color: tomato;
+    color: wheat;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.3em;
+}
+
+#unit {
+    border-radius: 20px;
+    border: 3px dotted rgb(130, 146, 238);
+    font-size: 1.2em;
+}
+
+#celfeh {
+    font-family: fantasy;
+    font-style: italic;
+    color: gray;
+    margin: 30px 50px;
+
+}
+
+#convertBtn {
+    font-size: 2em;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: yellow;
+    color: blue;
+    margin: 20px 60px;
+    border: 3px solid greenyellow;
+    outline: 3px solid mediumslateblue;
+    outline-offset: 2px;
+    text-shadow: 3px 2px;
+}
+
+#show {
+    color: darkolivegreen;
+    font-size: 2em;
+    font-family: sans-serif;
+}
